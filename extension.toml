@@ -4,8 +4,8 @@ version = "0.0.1"
 schema_version = 1
 authors = ["Pasquale Mainolfi <mnlpql@gmail.com>"]
 description = "tree-sitter-csound grammar"
-repository = "https://github.com/your-name/my-zed-extension"
-snippets = "grammars/csound/snippets/snippets.json"
+repository = "https://github.com/PasqualeMainolfi/csound-zed"
+snippets = "snippets.json"
 
 
 [grammars.csound]
