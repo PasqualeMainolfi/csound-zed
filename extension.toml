@@ -1,0 +1,14 @@
+id = "csound"
+name = "Csound Zed Support"
+version = "0.0.1"
+schema_version = 1
+authors = ["Pasquale Mainolfi <mnlpql@gmail.com>"]
+description = "tree-sitter-csound grammar"
+repository = "https://github.com/your-name/my-zed-extension"
+# snippets = "grammars/csound/snippets.json"
+snippets = "/Users/pm/AcaHub/Coding/tree-sitter-csound/csound-tree-sitter/snippets.json"
+
+
+[grammars.csound]
+repository = "file:////Users/pm/AcaHub/Coding/tree-sitter-csound/csound-tree-sitter"
+rev = "65f11dfb31913a9e0023ee1895ff96694ebfc358"
