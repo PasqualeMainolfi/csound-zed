@@ -10,4 +10,4 @@ snippets = "snippets.json"
 
 [grammars.csound]
 repository = "https://github.com/PasqualeMainolfi/tree-sitter-csound"
-rev = "f55bd7cd44c6763147e2c20ffd6c784cd9dd1d18"
+rev = "c3ca9e45a087557711b8f24c2bd39aad98e3cbd6"
