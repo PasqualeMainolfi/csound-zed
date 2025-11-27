@@ -39,10 +39,10 @@
 (for_loop "od" @outdent)
 
 (switch_statement) @indent
-(switch_statement (switch_end) @outdent)
-
 (case_block) @indent
 (default_block) @indent
+(switch_statement (switch_end) @outdent)
+
 
 (score_loop) @indent
 (score_loop "}" @outdent)
