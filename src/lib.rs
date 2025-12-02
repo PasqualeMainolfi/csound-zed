@@ -52,11 +52,11 @@ impl zed::Extension for CsoundExtension {
             eprintln!("ZED: Download  LSP from: {}", asset_url);
             zed::download_file(&asset_url, &server_path, zed::DownloadedFileType::Uncompressed)?;
 
-            // Rendi eseguibile (importante su Mac/Linux)
             zed::make_file_executable(&server_path)?;
         }
 
         self.cached_binary_path = Some(server_path.clone());
+        let server_path = "/Users/pm/AcaHub/Coding/tree-sitter-csound/csound-lsp/target/release/csound-lsp";
 
         Ok(zed::Command {
             command: server_path.to_string(),
