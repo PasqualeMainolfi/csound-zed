@@ -56,7 +56,6 @@ impl zed::Extension for CsoundExtension {
         }
 
         self.cached_binary_path = Some(server_path.clone());
-        let server_path = "/Users/pm/AcaHub/Coding/tree-sitter-csound/csound-lsp/target/release/csound-lsp";
 
         Ok(zed::Command {
             command: server_path.to_string(),
