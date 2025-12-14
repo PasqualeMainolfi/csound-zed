@@ -36,7 +36,7 @@
 (macro_usage) @local.definition
 
 (macro_define
-  (identifier) @local.definition)
+  (macro_name) @local.definition)
 
 (argument_list
   (identifier) @local.reference)
@@ -71,9 +71,6 @@
 
 (opcode_statement
   (type_identifier_legacy) @local.definition)
-
-(macro_define
-  (identifier) @local.definition)
 
 (header_assignment
   (header_identifier) @local.definition)
