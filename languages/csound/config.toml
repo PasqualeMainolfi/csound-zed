@@ -1,4 +1,4 @@
-name = "CSound"
+name = "Csound"
 grammar = "csound"
 path_suffixes = ["csd", "orc", "sco", "udo"]
 line_comments = ["; ", "//"]
