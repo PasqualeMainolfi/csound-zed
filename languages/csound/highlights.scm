@@ -1,14 +1,14 @@
 (global_typed_identifier name: (identifier) @variable)
 
-; (typed_identifier
-;     name: (identifier) @variable)
+(typed_identifier
+    name: (identifier) @variable)
 
 (flag_identifier) @tag
 (flag_content flag_type: (_) @constant.builtin)
 (flag_content flag_value: (_) @variable)
 
 (type_identifier) @type
-; (typed_identifier type: (_) @type)
+(typed_identifier type: (_) @type)
 (type_identifier_legacy) @type
 
 (label_statement) @label
@@ -87,6 +87,8 @@
     (score_np_operator)
     (score_pp_operator)
     (boolean_var)
+    (break_statement)
+    (continue_statement)
 ] @keyword
 
 (identifier) @variable
@@ -172,6 +174,8 @@
     "]"
     "{"
     "}"
+    (kw_open_raw_string)
+    (kw_close_raw_string)
 ] @punctuation.bracket
 
 (cabbage_statement . (identifier) @type)
