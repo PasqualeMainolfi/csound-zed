@@ -1,6 +1,6 @@
 id = "csound"
 name = "Csound Zed Support"
-version = "1.1.0"
+version = "1.1.1"
 schema_version = 1
 authors = ["Pasquale Mainolfi <mnlpql@gmail.com>"]
 description = "tree-sitter-csound grammar"
@@ -9,7 +9,7 @@ repository = "https://github.com/PasqualeMainolfi/csound-zed"
 
 [grammars.csound]
 repository = "https://github.com/PasqualeMainolfi/tree-sitter-csound"
-rev = "fcbcc4555728982417dead261346f44695ef793a"
+rev = "d3a7e79fc0abd8f4d93e27906587fe28549ad0e2"
 
 [language_servers.csound-lsp]
 name = "Csound"
