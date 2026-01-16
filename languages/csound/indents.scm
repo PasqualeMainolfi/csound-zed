@@ -1,6 +1,5 @@
 (instrument_definition) @indent
-(instrument_definition
-  (bounded_error "endin" @outdent))
+(instrument_definition "endin" @outdent)
 
 (udo_definition_legacy) @indent
 (udo_definition_legacy "endop" @outdent)
@@ -11,33 +10,26 @@
 (internal_raw_block
     (kw_close_raw_string) @outdent)
 
-(if_statement) @indent
-(if_statement
-    (then_block) @indent)
+; (if_statement) @indent
+; (if_statement
+;     (then_block) @indent)
 
-[
-    (kw_endif)
-    (kw_fi)
-    (else_block)
-    (elseif_block)
-] @outdent
-
-(else_block) @indent
-(elseif_block) @indent
+; [(endif_block)(else_block)(elseif_block)] @outdent
+; [(else_block) (elseif_block)] @indent
 
 
-(switch_statement) @indent
-(switch_statement
-  [(case_block) (default_block)] @indent)
-(case_block
-  case_body: (opcode_statement) @indent)
-(case_block
-  case_body: (assignment_statement) @indent)
-(default_block
-  default_body: (opcode_statement) @indent)
-(default_block
-  default_body: (assignment_statement) @indent)
-(kw_switch_end) @outdent
+; (switch_statement) @indent
+; (switch_statement
+;   [(case_block) (default_block)] @indent)
+; (case_block
+;   case_body: (opcode_statement) @indent)
+; (case_block
+;   case_body: (assignment_statement) @indent)
+; (default_block
+;   default_body: (opcode_statement) @indent)
+; (default_block
+;   default_body: (assignment_statement) @indent)
+; (kw_switch_end) @outdent
 
 (while_loop) @indent
 (while_loop (kw_od) @outdent)
