@@ -9,7 +9,7 @@ repository = "https://github.com/PasqualeMainolfi/csound-zed"
 
 [grammars.csound]
 repository = "https://github.com/PasqualeMainolfi/tree-sitter-csound"
-rev = "6d5f7214cf27955e2120873d006a13dda899c688"
+rev = "fbc93a1aadd5bfd02e482c8e6f5d08a45f3a212e"
 
 [language_servers.csound-lsp]
 name = "Csound"
