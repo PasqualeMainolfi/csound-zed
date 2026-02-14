@@ -183,13 +183,13 @@
 ; (cabbage_statement . (identifier) @type)
 ; (cabbage_property . (identifier) @property)
 
-((opcode_name) @function
- (#not-has-child? @function "typed_identifier"))
+; ((opcode_name) @function
+;  (#not-has-child? @function "typed_identifier"))
 
-(opcode_name
-    (typed_identifier
-        name: (_) @function
-        type: (_) @type))
+; (opcode_name
+;     (typed_identifier
+;         name: (_) @function
+;         type: (_) @type))
 
 [
   (return_statement)
@@ -214,3 +214,11 @@
 
 (typed_identifier
   type: (identifier) @type)
+
+((opcode_name) @function
+ (#not-has-child? @function "typed_opcode_name"))
+
+(opcode_name
+    (typed_opcode_name
+        name: (_) @function
+        type: (_) @type))
