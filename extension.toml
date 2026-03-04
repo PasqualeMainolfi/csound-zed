@@ -1,6 +1,6 @@
 id = "csound"
 name = "Csound Zed Support"
-version = "1.2.3"
+version = "1.2.4"
 schema_version = 1
 authors = ["Pasquale Mainolfi <mnlpql@gmail.com>"]
 description = "tree-sitter-csound grammar"
