@@ -90,6 +90,10 @@
     (continue_statement)
 ] @keyword
 
+; Generic fallback. In Zed the LAST matching pattern wins, so this rule must stay
+; before the specific ones (typed opcode names, types, struct members, macros).
+; The grammar's queries/highlights.scm puts it last instead, because the Csound
+; LSPs keep the FIRST capture: do not copy that file here as is.
 (identifier) @variable
 
 (struct_definition
@@ -210,8 +214,7 @@
 (typed_identifier
   type: (identifier) @type)
 
-((opcode_name) @function
- (#not-has-child? @function "typed_opcode_name"))
+(opcode_name !opcode_typed_name) @function
 
 (opcode_name
     (typed_opcode_name
